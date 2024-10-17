@@ -1,15 +1,19 @@
 .container{
     background-color: black;
+    width: 30%;
+
 }
 .container h1{
     text-align: center;
     color: white;
-    padding: 2px;
-    margin: 20px;
+   padding-top: 20px;
+   font-size: 21px;
+    
 }
 form{
     text-align: center;
     border-color: white;
+    
 
 }
 form input {
@@ -22,6 +26,7 @@ form input {
 }
 ::placeholder{
     color: white;
+    
 }
 
 
