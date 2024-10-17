@@ -1,0 +1,37 @@
+.container{
+    background-color: black;
+    width: 30%;
+
+}
+.container h1{
+    text-align: center;
+    color: white;
+   padding-top: 20px;
+   font-size: 21px;
+    
+}
+form{
+    text-align: center;
+    border-color: white;
+    
+
+}
+form input {
+    padding: 6px;
+    border-radius: 7px;
+    background-color: black;
+    margin-bottom: 20px;
+    border-color: white;
+    
+}
+::placeholder{
+    color: white;
+    
+}
+
+
+button {
+    border-radius: 40%;
+    background-color:green;
+    font-size: 15px;
+}
