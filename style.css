@@ -22,6 +22,7 @@ form input {
     background-color: black;
     margin-bottom: 20px;
     border-color: white;
+    color: white;
     
 }
 ::placeholder{
@@ -29,7 +30,9 @@ form input {
     
 }
 
-
+li{
+    color: white;
+}
 button {
     border-radius: 40%;
     background-color:green;
