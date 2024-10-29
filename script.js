@@ -14,15 +14,28 @@ else{
     const deleteBtn = document.createElement("span");
     deleteBtn.innerHTML = "❌";
     todoItem.appendChild(deleteBtn); 
+    saveTask();
 } 
  } 
     // check and delete logic 
     todoList.addEventListener("click",function(event) {
         if(event.target.tagName === "LI") {
 event.target.classList.toggle("checked"); 
+saveTask();
+
         } 
 else if(event.target.tagName === "SPAN") {
     event.target.parentElement.remove();
+    saveTask();
 }
         } 
-    )
+    ) 
+    // add list to local storage 
+    function saveTask(){
+        localStorage.setItem("data",todoList.innerHTML); 
+    } 
+    // retrieve list from local storage 
+    function showTask(){
+        todoList.innerHTML = localStorage.getItem("data");
+    } 
+    showTask();
