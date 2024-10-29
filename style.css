@@ -37,4 +37,14 @@ button {
     border-radius: 40%;
     background-color:green;
     font-size: 15px;
+} 
+span {
+    max-width: 200px;
+} 
+.checked {
+    text-decoration-line: line-through;
+} 
+ul{
+    list-style: none;
+    padding: 25px 5px;
 }

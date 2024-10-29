@@ -10,5 +10,19 @@ else{
     const todoItem = document.createElement("li");
     todoItem.innerHTML = usertext;
     todoList.appendChild(todoItem); 
+    //add delete button
+    const deleteBtn = document.createElement("span");
+    deleteBtn.innerHTML = "❌";
+    todoItem.appendChild(deleteBtn); 
 } 
- }
+ } 
+    // check and delete logic 
+    todoList.addEventListener("click",function(event) {
+        if(event.target.tagName === "LI") {
+event.target.classList.toggle("checked"); 
+        } 
+else if(event.target.tagName === "SPAN") {
+    event.target.parentElement.remove();
+}
+        } 
+    )
